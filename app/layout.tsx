@@ -2,17 +2,24 @@ import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
+import './globals.css'
+import Image from 'next/image'
+
  
 export const metadata = {
-  // Define your metadata here
-  // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: 'Apex Pathing',
+  description: 'The ultimate motion profiling and pathing library for FTC teams. Achieve smooth, reliable, and high-speed autonomous movement.',
 }
  
 const banner = <Banner storageKey="some-key">Welcome to ApexPathing! 🎉</Banner>
 const navbar = (
   <Navbar
-    logo={<b>ApexPathing</b>}
-    // ... Your additional navbar options
+    logo={
+      <div style={{ display: 'flex', alignItems: 'center', marginLeft: '-1rem' }}>
+        <Image src="/logo.png" alt="ApexPathing" width={32} height={32} />
+        <b style={{ marginLeft: '0.5em' }}>ApexPathing</b>
+      </div>
+    }
   />
 )
 const footer = <Footer>MIT {new Date().getFullYear()} © ApexPathing.</Footer>
@@ -45,6 +52,7 @@ export default async function RootLayout({
           footer={footer}
           // ... Your additional layout options
         >
+          
           {children}
         </Layout>
       </body>

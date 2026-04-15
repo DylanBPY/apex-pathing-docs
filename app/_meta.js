@@ -7,19 +7,21 @@ export default {
     title: "Installation Guide",
     type: "page"
   },
-  // This creates the Dropdown Menu
   "tuners-menu": {
     title: "Tuners",
     type: "menu",
     items: {
       "forward-deceleration-tuner": {
-        title: "Forward Deceleration Tuner"
+        title: "Forward Deceleration Tuner",
+        href: "/forward-deceleration-tuner"
       },
       "feedforward-tuner": {
-        title: "Feedforward Tuner"
+        title: "Feedforward Tuner",
+        href: "/feedforward-tuner"
       },
       "forward-and-lateral-velocity-tuners": {
-        title: "Forward and Lateral Velocity Tuners"
+        title: "Forward and Lateral Velocity Tuners",
+        href: "/forward-and-lateral-velocity-tuners"
       }
     }
   },
@@ -28,16 +30,17 @@ export default {
     type: "menu",
     items: {
       "current-limiting-test": {
-        title: "Current Limiting Test"
+        title: "Current Limiting Test",
+        href: "/current-limiting-test"
       },
       "localization-test": {
-        title: "Localization Test"
+        title: "Localization Test",
+        href: "/localization-test"
       }
     }
   },
   "github-readme": {
     title: "GitHub README",
-    type: "page" 
+    type: "page"
   }
 }
-

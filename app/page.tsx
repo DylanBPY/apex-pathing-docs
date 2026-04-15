@@ -19,7 +19,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mb-20">
-          <Link href="/docs" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20">
+          <Link href="/github-readme" className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-500 transition-all shadow-lg shadow-blue-500/20">
             Get Started
           </Link>
           <a href="https://github.com/ApexPathing/main.git" target="_blank" className="px-8 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all">
