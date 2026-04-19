@@ -12,9 +12,9 @@ export const metadata = {
 function PageBanner() {
   return (
     <Banner storageKey="some-key">
-      Apex Pathing is currently not released! Join the 
+      Apex Pathing is currently not released! Join the &nbsp;
       <a href="https://discord.gg/qpP4CXaHDg" target="_blank" rel="noopener noreferrer">Discord</a>
-      to help or keep up with development.
+      &nbsp; to help or keep up with development.
     </Banner>
   )
 }
